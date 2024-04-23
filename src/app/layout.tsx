@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import cx from "classnames";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,9 +15,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const bodyClassName = cx(
+    inter.className,
+    "bg-gray-900 h-screen flex flex-col p-5"
+  );
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={bodyClassName}>
+        <main className="flex flex-col container m-auto py-6 px-3 sm:px-6 bg-gray-500 text-neutral-400 max-w-[448px] min-h-[337px] max-h-screen rounded-2xl">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

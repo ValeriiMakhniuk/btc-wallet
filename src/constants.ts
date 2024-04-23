@@ -1,0 +1,1 @@
+export const KEY_PAIR_STORADGE_KEY = "KEY_PAIR";
