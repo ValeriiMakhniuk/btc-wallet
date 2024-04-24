@@ -14,7 +14,7 @@ const SavedText = (props: { cb: () => void }) => {
     setTimeout(props.cb, 1000);
   }, []);
 
-  return <p>Copied</p>;
+  return <p className="h-6">Copied</p>;
 };
 
 export const ClipboardCopy = (props: IProps) => {

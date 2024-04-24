@@ -16,13 +16,11 @@ export const WelcomeScreen = () => {
   };
 
   return (
-    <div className="flex w-full h-full flex-col justify-center items-center">
-      <Avatar className="mb-2" />
-      <p className="text-3xl font-bold mb-2.5">Welcome</p>
-      <ContentBlock className="flex flex-col items-center justify-center w-full">
-        <p className="font-medium mb-2.5">
-          No wallets found, please create one
-        </p>
+    <div className="flex w-full h-full flex-col gap-2.5 justify-center items-center">
+      <Avatar />
+      <p className="text-3xl font-bold">Welcome</p>
+      <ContentBlock className="flex flex-col gap-2.5 items-center justify-center w-full">
+        <p className="font-medium">No wallets found, please create one</p>
         <Button
           variant={ButtonVariant.PRIMARY}
           className="w-full"

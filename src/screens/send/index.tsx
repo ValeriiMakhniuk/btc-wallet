@@ -5,12 +5,12 @@ import { Input } from "@/components/shared/input";
 
 export const SendScreen = () => {
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col gap-2.5 items-center">
       <BackLink />
-      <Avatar className="mb-2.5" />
-      <p className="mb-2.5 font-bold text-3xl">Send BTC</p>
-      <ContentBlock>
-        <Input type="text" placeholder="Address" className="w-full mb-2.5" />
+      <Avatar />
+      <p className="font-bold text-3xl">Send BTC</p>
+      <ContentBlock className="w-full flex flex-col gap-2.5 items-center">
+        <Input type="text" placeholder="Address" className="w-full" />
         <Input type="text" placeholder="Amount" className="w-full" />
       </ContentBlock>
     </section>

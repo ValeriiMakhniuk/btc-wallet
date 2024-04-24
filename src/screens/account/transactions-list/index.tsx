@@ -36,12 +36,12 @@ export const TransactionsList = (props: IProps) => {
   }
 
   return (
-    <ContentBlock className={cx(className, "relative overflow-scroll")}>
+    <ContentBlock className={cx(className, "relative")}>
       <p className="text-neutral-300 text-sm uppercase">Transaction history</p>
       {content ? (
         <div className="flex w-full justify-center">{content}</div>
       ) : (
-        <ul className="space-y-2.5 overflow-scroll">
+        <ul className="space-y-2.5">
           {data?.map((tx) => {
             return (
               <li className="py-3" key={tx.id}>
